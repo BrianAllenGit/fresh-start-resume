@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fresh Start Resume</title>
+<meta name="description" content="A free, private resume builder. Nothing is saved or sent anywhere.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#form-area" data-i18n="skip">Skip to the form</a>
+<header class="top no-print">
+  <h1 data-i18n="title">Fresh Start Resume</h1>
+  <div class="langs" role="group" aria-label="Language / Idioma">
+    <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" id="lang-es" data-lang="es" aria-pressed="false">ES</button>
+  </div>
+</header>
+
+<section class="privacy no-print" aria-labelledby="priv-h">
+  <h2 id="priv-h" data-i18n="privH">Your privacy</h2>
+  <p data-i18n="privP">Your information never leaves this device. We don't track you, store anything, or use cookies. When you close this page, everything you typed is gone, so print or save your resume as a PDF before you leave.</p>
+</section>
+
+<main class="layout">
+  <section id="form-area" class="panel no-print" aria-labelledby="step-h" tabindex="-1">
+    <p class="progress-text" id="progress-text" aria-live="polite"></p>
+    <div class="bar" aria-hidden="true"><div id="bar-fill"></div></div>
+    <h2 id="step-h"></h2>
+    <div class="tip" id="tip"></div>
+    <div id="step-body"></div>
+    <div class="nav">
+      <button type="button" id="btn-back" class="btn secondary"></button>
+      <button type="button" id="btn-next" class="btn primary"></button>
+    </div>
+  </section>
+
+  <section class="panel preview-panel" aria-labelledby="prev-h">
+    <div class="no-print">
+      <h2 id="prev-h" data-i18n="previewH">Your resume</h2>
+      <div class="opts">
+        <label for="tpl" data-i18n="tplLabel">Style</label>
+        <select id="tpl"><option value="simple"></option><option value="modern"></option></select>
+        <label for="rlang" data-i18n="rlangLabel">Resume language</label>
+        <select id="rlang"><option value="en">English</option><option value="es">Español</option></select>
+      </div>
+      <button type="button" id="btn-print" class="btn primary big" data-i18n="print">Print / Save as PDF</button>
+      <p class="hint" data-i18n="printHint">In the print window, choose "Save as PDF" as the printer to keep a copy.</p>
+    </div>
+    <article id="resume" class="resume simple" lang="en" aria-label="Resume preview"></article>
+  </section>
+</main>
+
+<footer class="no-print">
+  <p data-i18n="foot">This site has no analytics and saves nothing. The website host may keep standard server logs of visits that we cannot see or control.</p>
+  <p>Fresh Start Resume · MIT</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
