@@ -39,7 +39,7 @@
   <section id="form-area" class="panel no-print" aria-labelledby="step-h" tabindex="-1">
     <p class="progress-text" id="progress-text" aria-live="polite"></p>
     <div class="bar" aria-hidden="true"><div id="bar-fill"></div></div>
-    <h2 id="step-h"></h2>
+    <h2 id="step-h" tabindex="-1"></h2>
     <div class="tip" id="tip"></div>
     <div id="step-body"></div>
     <div class="nav">
@@ -70,6 +70,7 @@
   <p>Fresh Start Resume · MIT</p>
 </footer>
 <noscript><p><span lang="en">This resume builder needs JavaScript.</span> / <span lang="es">Este constructor de currículum necesita JavaScript.</span></p></noscript>
+<div id="status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
 <script src="app.js"></script>
 </body>
 </html>
