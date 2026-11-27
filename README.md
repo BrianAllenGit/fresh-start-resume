@@ -1,5 +1,7 @@
 # Fresh Start Resume
 
+Live: https://brianallengit.github.io/fresh-start-resume/
+
 A free, private, bilingual (English / Spanish) resume builder for people leaving homelessness. Answer a few short steps, see your resume live, then print it or save it as a PDF. It works on a phone or a library computer, and offline once the page has loaded.
 
 ## Privacy promise
@@ -7,7 +9,7 @@ A free, private, bilingual (English / Spanish) resume builder for people leaving
 - Your information never leaves your device.
 - No cookies, no localStorage, no accounts, no analytics, no network requests, no third-party fonts or scripts.
 - Everything lives in page memory. When you close the page it is gone, so print or save as PDF first.
-- The website host may keep standard server logs of visits; the app cannot see or control those.
+- The site is hosted on GitHub Pages, which may keep standard visit logs; the app cannot see or control those, and we add nothing.
 
 ## Run it
 
@@ -17,7 +19,7 @@ Just open `index.html` in a browser. There is no build step and nothing to insta
 
 1. Push this repo to GitHub.
 2. Settings, Pages, Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
-3. Update the footer note in `index.html` if your host's logging differs.
+3. Update the footer note (`foot` in `app.js` and `index.html`) if your host changes.
 
 ## Why
 
