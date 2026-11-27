@@ -7,7 +7,7 @@
       privP: "Your information never leaves this device. We don't track you, store anything, or use cookies. When you close this page, everything you typed is gone, so print or save your resume as a PDF before you leave. On a shared computer, delete the PDF from Downloads after you send it.",
       previewH: 'Your resume', tplLabel: 'Style', rlangLabel: 'Resume language', simple: 'Simple', modern: 'Modern',
       print: 'Print / Save as PDF', printHint: 'In the print window, choose "Save as PDF" as the printer to keep a copy.',
-      foot: 'This site has no analytics and saves nothing. The website host may keep standard server logs of visits that we cannot see or control.',
+      foot: 'This site has no analytics and saves nothing. It is hosted on GitHub Pages, which may keep standard visit logs that we cannot see or control. We add nothing.',
       stepOf: 'Step {n} of {t}', back: 'Back', next: 'Next', done: 'Done',
       steps: ['Contact', 'Summary', 'Work history', 'Skills', 'Education and training', 'References', 'Finish'],
       tips: [
@@ -42,7 +42,7 @@
       privP: 'Tu información nunca sale de este dispositivo. No te rastreamos, no guardamos nada y no usamos cookies. Cuando cierres esta página, todo lo que escribiste desaparece, así que imprime tu currículum o guárdalo como PDF antes de irte. En una computadora compartida, borra el PDF de Descargas después de enviarlo.',
       previewH: 'Tu currículum', tplLabel: 'Estilo', rlangLabel: 'Idioma del currículum', simple: 'Simple', modern: 'Moderno',
       print: 'Imprimir / Guardar como PDF', printHint: 'En la ventana de impresión, elige "Guardar como PDF" como impresora para conservar una copia.',
-      foot: 'Este sitio no tiene analíticas y no guarda nada. El servidor que aloja la página puede guardar registros estándar de las visitas, que nosotros no podemos ver ni controlar.',
+      foot: 'Este sitio no tiene analíticas y no guarda nada. Está alojado en GitHub Pages, que puede guardar registros estándar de visitas que nosotros no podemos ver ni controlar. Nosotros no agregamos nada.',
       stepOf: 'Paso {n} de {t}', back: 'Atrás', next: 'Siguiente', done: 'Listo',
       steps: ['Contacto', 'Resumen', 'Historial de trabajo', 'Habilidades', 'Estudios y capacitación', 'Referencias', 'Terminar'],
       tips: [
