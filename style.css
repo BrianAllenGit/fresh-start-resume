@@ -28,7 +28,7 @@ textarea{min-height:90px}
 .top :focus-visible{outline-color:#fff;box-shadow:0 0 0 5px var(--accent),0 0 0 8px #ff9800}
 .previewlink{display:inline-block;margin:12px 0 0;font-weight:600;color:var(--accent)}
 @media(min-width:1000px){.previewlink{display:none}}
-@media(max-width:480px){.resume .jobhead span:last-child{white-space:normal}.resume{padding:18px 16px}.privacy{padding:10px 12px}}
+@media(max-width:480px){.resume .jobhead span:last-child{white-space:normal}.privacy{padding:10px 12px}}
 .btn{font:inherit;font-weight:700;min-height:48px;padding:10px 18px;border-radius:8px;border:2px solid var(--accent);cursor:pointer}
 .btn.primary{background:var(--accent);color:#fff}.btn.secondary{background:#fff;color:var(--accent)}
 .btn.big{width:100%;margin-top:10px;font-size:1.2rem}
@@ -63,6 +63,7 @@ footer a{color:var(--accent)}
 .resume.modern h3.nm{color:#0b4f8a;font-size:24pt}
 .resume.modern h3.sc{border:0;border-left:5px solid #0b4f8a;padding-left:8px;color:#0b4f8a;letter-spacing:.04em}
 .resume .empty{color:#555;font-style:italic}
+@media(max-width:480px){.resume{padding:18px 16px}}
 @media print{
   @page{size:letter;margin:.6in}
   body{background:#fff;font-size:11pt}
