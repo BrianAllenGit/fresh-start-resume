@@ -25,8 +25,8 @@
 <header class="top no-print">
   <h1 data-i18n="title">Fresh Start Resume</h1>
   <div class="langs" role="group" aria-label="Language / Idioma">
-    <button type="button" id="lang-en" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
-    <button type="button" id="lang-es" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+    <button type="button" id="lang-en" data-lang="en" lang="en" aria-pressed="true">English</button>
+    <button type="button" id="lang-es" data-lang="es" lang="es" aria-pressed="false">Español</button>
   </div>
 </header>
 
@@ -56,7 +56,7 @@
         <label for="tpl" data-i18n="tplLabel">Style</label>
         <select id="tpl"><option value="simple"></option><option value="modern"></option></select>
         <label for="rlang" data-i18n="rlangLabel">Resume language</label>
-        <select id="rlang"><option value="en">English</option><option value="es">Español</option></select>
+        <select id="rlang"><option value="en" lang="en">English</option><option value="es" lang="es">Español</option></select>
       </div>
       <button type="button" id="btn-print" class="btn primary big" data-i18n="print">Print / Save as PDF</button>
       <p class="hint" data-i18n="printHint">In the print window, choose "Save as PDF" as the printer to keep a copy.</p>
@@ -69,7 +69,7 @@
   <p data-i18n="foot">This site has no analytics and saves nothing. It is hosted on GitHub Pages, which may keep standard visit logs that we cannot see or control. We add nothing.</p>
   <p>Fresh Start Resume · MIT</p>
 </footer>
-<noscript><p>This resume builder needs JavaScript. / Este constructor de currículum necesita JavaScript.</p></noscript>
+<noscript><p><span lang="en">This resume builder needs JavaScript.</span> / <span lang="es">Este constructor de currículum necesita JavaScript.</span></p></noscript>
 <script src="app.js"></script>
 </body>
 </html>

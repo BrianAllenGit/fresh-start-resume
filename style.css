@@ -3,10 +3,10 @@
 html{font-size:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:1.125rem}
 .skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;padding:8px;z-index:9}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:var(--accent);color:#fff}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;background:var(--accent);color:#fff}
 .top h1{margin:0;font-size:1.4rem}
 .langs{display:flex;gap:6px}
-.langs button{min-width:52px;min-height:48px;font-size:1.1rem;font-weight:700;border:2px solid #fff;background:transparent;color:#fff;border-radius:8px;cursor:pointer}
+.langs button{min-width:52px;min-height:48px;padding:0 12px;font-size:1.05rem;font-weight:700;border:2px solid #fff;background:transparent;color:#fff;border-radius:8px;cursor:pointer}
 .langs button[aria-pressed="true"]{background:#fff;color:var(--accent)}
 .privacy{margin:12px auto;max-width:1200px;padding:12px 16px;background:#e6f4ea;border:2px solid #1e6b34;border-radius:10px}
 .privacy h2{margin:0 0 4px;font-size:1.1rem}.privacy p{margin:0}
