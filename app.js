@@ -4,11 +4,11 @@
   var T = {
     en: {
       skip: 'Skip to the form', title: 'Fresh Start Resume', privH: 'Your privacy',
-      privP: "Your information never leaves this device. We don't track you, store anything, or use cookies. When you close this page, everything you typed is gone, so print or save your resume as a PDF before you leave.",
+      privP: "Your information never leaves this device. We don't track you, store anything, or use cookies. When you close this page, everything you typed is gone, so print or save your resume as a PDF before you leave. On a shared computer, delete the PDF from Downloads after you send it.",
       previewH: 'Your resume', tplLabel: 'Style', rlangLabel: 'Resume language', simple: 'Simple', modern: 'Modern',
       print: 'Print / Save as PDF', printHint: 'In the print window, choose "Save as PDF" as the printer to keep a copy.',
       foot: 'This site has no analytics and saves nothing. The website host may keep standard server logs of visits that we cannot see or control.',
-      stepOf: 'Step {n} of {t}', back: 'Back', next: 'Next', skipStep: 'Skip this step', done: 'Done',
+      stepOf: 'Step {n} of {t}', back: 'Back', next: 'Next', done: 'Done',
       steps: ['Contact', 'Summary', 'Work history', 'Skills', 'Education and training', 'References', 'Finish'],
       tips: [
         'A phone number or an email is enough. You do not need a street address. A city is optional.',
@@ -17,18 +17,18 @@
         'Tap the skills you have. Everyone has skills, including ones you learned on the street, at home, or on the job. Add your own below.',
         'Optional. GED, certificates, classes, programs, and training all count, even if you did not finish.',
         'Optional. Ask people who know your work before you list them. Or just say they are available on request.',
-        'Looks good? Pick a style, then print or save as PDF. You can go back and change anything. Remember: nothing is saved when you close this page.'
+        'Looks good? Pick a style, then print or save as PDF. You can go back and change anything. Remember: nothing is saved when you close this page. On a shared computer, delete the PDF from Downloads after you send it.'
       ],
-      name: 'Full name', phone: 'Phone', email: 'Email (optional)', city: 'City (optional)',
+      name: 'Full name', phone: 'Phone (a phone or an email is enough)', email: 'Email (optional)', city: 'City (optional)',
       summaryL: 'Short summary (optional)', examples: 'Tap to add an example:',
       ex: [
         'Hard-working and dependable person ready to learn quickly and show up on time.',
         'Friendly, patient worker with experience helping customers and working on a team.',
         'Reliable worker with hands-on experience and a strong willingness to learn new skills.'
       ],
-      jobTitle: 'Job or role (for example: Day laborer, Caregiver)', employer: 'Where (company, person, or place) (optional)',
+      jobTitle: 'Job or role (for example: Day laborer, Caregiver)', employer: 'Where (company, person, or place; optional)',
       dates: 'When (optional, for example: about 2021 to 2023)', details: 'What you did (one thing per line)',
-      job: 'Job', addJob: 'Add another job', remove: 'Remove',
+      job: 'Job', addJob: 'Add another job', remove: 'Remove', confirmRm: 'Remove this? This cannot be undone.', previewLink: 'See my resume', resumeAria: 'Resume preview', docName: 'Resume', rmSkill: 'Remove skill: ',
       skillsChips: 'Tap to add or remove:', skillFree: 'Add your own skill', addSkill: 'Add',
       skills: ['Customer service', 'Forklift', 'Cooking', 'Cleaning', 'Warehouse', 'Construction', 'Driving', 'Bilingual', 'Teamwork', 'Cash handling', 'Lifting', 'Computer basics'],
       eduName: 'Degree, certificate, or program', eduPlace: 'School or place (optional)', eduYear: 'Year (optional)',
@@ -39,11 +39,11 @@
     },
     es: {
       skip: 'Ir al formulario', title: 'Fresh Start Resume', privH: 'Tu privacidad',
-      privP: 'Tu información nunca sale de este dispositivo. No te rastreamos, no guardamos nada y no usamos cookies. Cuando cierres esta página, todo lo que escribiste desaparece, así que imprime tu currículum o guárdalo como PDF antes de irte.',
+      privP: 'Tu información nunca sale de este dispositivo. No te rastreamos, no guardamos nada y no usamos cookies. Cuando cierres esta página, todo lo que escribiste desaparece, así que imprime tu currículum o guárdalo como PDF antes de irte. En una computadora compartida, borra el PDF de Descargas después de enviarlo.',
       previewH: 'Tu currículum', tplLabel: 'Estilo', rlangLabel: 'Idioma del currículum', simple: 'Simple', modern: 'Moderno',
       print: 'Imprimir / Guardar como PDF', printHint: 'En la ventana de impresión, elige "Guardar como PDF" como impresora para conservar una copia.',
       foot: 'Este sitio no tiene analíticas y no guarda nada. El servidor que aloja la página puede guardar registros estándar de las visitas, que nosotros no podemos ver ni controlar.',
-      stepOf: 'Paso {n} de {t}', back: 'Atrás', next: 'Siguiente', skipStep: 'Saltar este paso', done: 'Listo',
+      stepOf: 'Paso {n} de {t}', back: 'Atrás', next: 'Siguiente', done: 'Listo',
       steps: ['Contacto', 'Resumen', 'Historial de trabajo', 'Habilidades', 'Estudios y capacitación', 'Referencias', 'Terminar'],
       tips: [
         'Con un teléfono o un correo es suficiente. No necesitas dirección. La ciudad es opcional.',
@@ -52,18 +52,18 @@
         'Toca las habilidades que tienes. Todos tenemos habilidades, también las que aprendiste en la calle, en casa o en el trabajo. Agrega las tuyas abajo.',
         'Opcional. El GED, certificados, clases, programas y capacitaciones cuentan, aunque no los hayas terminado.',
         'Opcional. Pide permiso a las personas que conocen tu trabajo antes de ponerlas. O solo escribe que hay referencias disponibles si las piden.',
-        '¿Se ve bien? Elige un estilo, luego imprime o guarda como PDF. Puedes regresar y cambiar lo que quieras. Recuerda: no se guarda nada cuando cierras esta página.'
+        '¿Se ve bien? Elige un estilo, luego imprime o guarda como PDF. Puedes regresar y cambiar lo que quieras. Recuerda: no se guarda nada cuando cierras esta página. En una computadora compartida, borra el PDF de Descargas después de enviarlo.'
       ],
-      name: 'Nombre completo', phone: 'Teléfono', email: 'Correo electrónico (opcional)', city: 'Ciudad (opcional)',
+      name: 'Nombre completo', phone: 'Teléfono (con teléfono o correo basta)', email: 'Correo electrónico (opcional)', city: 'Ciudad (opcional)',
       summaryL: 'Resumen corto (opcional)', examples: 'Toca para agregar un ejemplo:',
       ex: [
         'Persona trabajadora y responsable, lista para aprender rápido y llegar a tiempo.',
-        'Trabajador amable y paciente, con experiencia atendiendo clientes y trabajando en equipo.',
-        'Trabajador confiable con experiencia práctica y muchas ganas de aprender cosas nuevas.'
+        'Persona amable y paciente, con experiencia atendiendo clientes y trabajando en equipo.',
+        'Persona confiable con experiencia práctica y muchas ganas de aprender cosas nuevas.'
       ],
-      jobTitle: 'Trabajo o puesto (por ejemplo: Jornalero, Cuidador)', employer: 'Dónde (empresa, persona o lugar) (opcional)',
+      jobTitle: 'Trabajo o puesto (por ejemplo: Jornalero/a, Cuidador/a)', employer: 'Dónde (empresa, persona o lugar; opcional)',
       dates: 'Cuándo (opcional, por ejemplo: más o menos 2021 a 2023)', details: 'Qué hacías (una cosa por línea)',
-      job: 'Trabajo', addJob: 'Agregar otro trabajo', remove: 'Quitar',
+      job: 'Trabajo', addJob: 'Agregar otro trabajo', remove: 'Quitar', confirmRm: '¿Quitar esto? No se puede deshacer.', previewLink: 'Ver mi currículum', resumeAria: 'Vista previa del currículum', docName: 'Currículum', rmSkill: 'Quitar habilidad: ',
       skillsChips: 'Toca para agregar o quitar:', skillFree: 'Agrega otra habilidad', addSkill: 'Agregar',
       skills: ['Atención al cliente', 'Montacargas', 'Cocinar', 'Limpieza', 'Almacén', 'Construcción', 'Manejar', 'Bilingüe', 'Trabajo en equipo', 'Manejo de efectivo', 'Cargar peso', 'Computadora básica'],
       eduName: 'Título, certificado o programa', eduPlace: 'Escuela o lugar (opcional)', eduYear: 'Año (opcional)',
@@ -95,6 +95,23 @@
     return h + '<input id="' + id + '" type="' + (opts.type || 'text') + '"' + (opts.ac ? ' autocomplete="' + opts.ac + '"' : '') + ' value="' + esc(val) + '">';
   }
 
+  function keyIndex(k) { for (var i = 0; i < S.skills.length; i++) if (S.skills[i].k === k) return i; return -1; }
+  function hasKey(k) { return keyIndex(k) > -1; }
+  function hasText(v) {
+    var lv = v.toLowerCase();
+    for (var i = 0; i < S.skills.length; i++) {
+      var x = S.skills[i];
+      if (x.t != null ? x.t.toLowerCase() === lv : (T.en.skills[x.k].toLowerCase() === lv || T.es.skills[x.k].toLowerCase() === lv)) return true;
+    }
+    return false;
+  }
+  function skillName(x, R) { return x.t != null ? x.t : R.skills[x.k]; }
+  function hasData() {
+    return !!(S.name || S.phone || S.email || S.city || S.summary || S.skills.length || S.refs ||
+      S.jobs.some(function (j) { return j.title || j.employer || j.dates || j.details; }) ||
+      S.edus.some(function (e) { return e.name || e.place || e.year; }));
+  }
+
   function bind(id, fn) { var e = $(id); if (e) e.addEventListener('input', function () { fn(e.value); update(); }); }
 
   function renderStep() {
@@ -119,18 +136,18 @@
         h += '<div class="entry"><strong>' + esc(L.job) + ' ' + (i + 1) + '</strong>' +
           field('j-t' + i, L.jobTitle, j.title) + field('j-e' + i, L.employer, j.employer) +
           field('j-d' + i, L.dates, j.dates) + field('j-x' + i, L.details, j.details, { area: 1, rows: 3 }) +
-          (S.jobs.length > 1 ? '<p><button type="button" class="btn secondary small" data-rmjob="' + i + '">' + esc(L.remove) + '</button></p>' : '') + '</div>';
+          (S.jobs.length > 1 ? '<p><button type="button" class="btn secondary small" data-rmjob="' + i + '" aria-label="' + esc(L.remove + ' ' + L.job.toLowerCase() + ' ' + (i + 1)) + '">' + esc(L.remove) + '</button></p>' : '') + '</div>';
       });
       h += '<button type="button" class="btn secondary" id="add-job">' + esc(L.addJob) + '</button>';
     } else if (n === 3) {
       h = '<p class="hint">' + esc(L.skillsChips) + '</p><div class="chips">';
-      L.skills.forEach(function (s, i) { h += '<button type="button" class="chip" data-sk="' + i + '" aria-pressed="' + (S.skills.indexOf(s) > -1) + '">' + esc(s) + '</button>'; });
+      L.skills.forEach(function (s, i) { h += '<button type="button" class="chip" data-sk="' + i + '" aria-pressed="' + (hasKey(i)) + '">' + esc(s) + '</button>'; });
       h += '</div>' + field('f-skill', L.skillFree, '') + '<p><button type="button" class="btn secondary small" id="add-skill">' + esc(L.addSkill) + '</button></p><div class="chips" id="my-skills"></div>';
     } else if (n === 4) {
       S.edus.forEach(function (e, i) {
         h += '<div class="entry"><strong>' + esc(L.edu) + ' ' + (i + 1) + '</strong>' +
           field('e-n' + i, L.eduName, e.name) + field('e-p' + i, L.eduPlace, e.place) + field('e-y' + i, L.eduYear, e.year) +
-          (S.edus.length > 1 ? '<p><button type="button" class="btn secondary small" data-rmedu="' + i + '">' + esc(L.remove) + '</button></p>' : '') + '</div>';
+          (S.edus.length > 1 ? '<p><button type="button" class="btn secondary small" data-rmedu="' + i + '" aria-label="' + esc(L.remove + ' ' + L.edu.toLowerCase() + ' ' + (i + 1)) + '">' + esc(L.remove) + '</button></p>' : '') + '</div>';
       });
       h += '<button type="button" class="btn secondary" id="add-edu">' + esc(L.addEdu) + '</button>';
     } else if (n === 5) {
@@ -148,12 +165,12 @@
     var box = $('my-skills'); if (!box) return;
     var h = '';
     S.skills.forEach(function (s, i) {
-      if (t().skills.indexOf(s) === -1 && T.en.skills.indexOf(s) === -1 && T.es.skills.indexOf(s) === -1)
-        h += '<button type="button" class="chip" aria-pressed="true" data-rmsk="' + i + '">' + esc(s) + ' ✕</button>';
+      if (s.t != null)
+        h += '<button type="button" class="chip" data-rmsk="' + i + '" aria-label="' + esc(t().rmSkill + s.t) + '">' + esc(s.t) + ' <span aria-hidden="true">✕</span></button>';
     });
     box.innerHTML = h;
     Array.prototype.forEach.call(box.querySelectorAll('[data-rmsk]'), function (el) {
-      el.addEventListener('click', function () { S.skills.splice(+el.getAttribute('data-rmsk'), 1); renderMySkills(); update(); });
+      el.addEventListener('click', function () { if (!window.confirm(t().confirmRm)) return; S.skills.splice(+el.getAttribute('data-rmsk'), 1); renderMySkills(); update(); $('f-skill').focus(); });
     });
   }
 
@@ -177,20 +194,23 @@
       });
       $('add-job').addEventListener('click', function () { S.jobs.push({ title: '', employer: '', dates: '', details: '' }); renderStep(); $('j-t' + (S.jobs.length - 1)).focus(); });
       Array.prototype.forEach.call(document.querySelectorAll('[data-rmjob]'), function (el) {
-        el.addEventListener('click', function () { S.jobs.splice(+el.getAttribute('data-rmjob'), 1); renderStep(); update(); });
+        el.addEventListener('click', function () {
+          if (!window.confirm(t().confirmRm)) return;
+          S.jobs.splice(+el.getAttribute('data-rmjob'), 1); renderStep(); update(); $('add-job').focus();
+        });
       });
     }
     if (n === 3) {
       Array.prototype.forEach.call(document.querySelectorAll('[data-sk]'), function (el) {
         el.addEventListener('click', function () {
-          var s = t().skills[+el.getAttribute('data-sk')], i = S.skills.indexOf(s);
-          if (i > -1) S.skills.splice(i, 1); else S.skills.push(s);
+          var k = +el.getAttribute('data-sk'), i = keyIndex(k);
+          if (i > -1) S.skills.splice(i, 1); else S.skills.push({ k: k });
           el.setAttribute('aria-pressed', i === -1); update();
         });
       });
       var add = function () {
         var v = $('f-skill').value.replace(/^\s+|\s+$/g, '');
-        if (v && S.skills.indexOf(v) === -1) { S.skills.push(v); renderMySkills(); update(); }
+        if (v && !hasText(v)) { S.skills.push({ t: v }); renderMySkills(); update(); }
         $('f-skill').value = ''; $('f-skill').focus();
       };
       $('add-skill').addEventListener('click', add);
@@ -200,7 +220,10 @@
       S.edus.forEach(function (e, i) { bind('e-n' + i, function (v) { e.name = v; }); bind('e-p' + i, function (v) { e.place = v; }); bind('e-y' + i, function (v) { e.year = v; }); });
       $('add-edu').addEventListener('click', function () { S.edus.push({ name: '', place: '', year: '' }); renderStep(); $('e-n' + (S.edus.length - 1)).focus(); });
       Array.prototype.forEach.call(document.querySelectorAll('[data-rmedu]'), function (el) {
-        el.addEventListener('click', function () { S.edus.splice(+el.getAttribute('data-rmedu'), 1); renderStep(); update(); });
+        el.addEventListener('click', function () {
+          if (!window.confirm(t().confirmRm)) return;
+          S.edus.splice(+el.getAttribute('data-rmedu'), 1); renderStep(); update(); $('add-edu').focus();
+        });
       });
     }
     if (n === 5) {
@@ -227,7 +250,7 @@
         h += '</div>';
       });
     }
-    if (S.skills.length) { any = true; h += '<h2>' + L.skills + '</h2><p>' + S.skills.map(esc).join(', ') + '</p>'; }
+    if (S.skills.length) { any = true; h += '<h2>' + L.skills + '</h2><p>' + S.skills.map(function (x) { return esc(skillName(x, R)); }).join(', ') + '</p>'; }
     var eds = S.edus.filter(function (e) { return e.name || e.place || e.year; });
     if (eds.length) {
       any = true; h += '<h2>' + L.edu + '</h2>';
@@ -249,6 +272,7 @@
     var L = t();
     document.documentElement.lang = S.ui;
     document.title = L.title;
+    $('resume').setAttribute('aria-label', L.resumeAria);
     Array.prototype.forEach.call(document.querySelectorAll('[data-i18n]'), function (el) { if (L[el.getAttribute('data-i18n')] != null) el.textContent = L[el.getAttribute('data-i18n')]; });
     var o = $('tpl').options; o[0].textContent = L.simple; o[1].textContent = L.modern;
     $('lang-en').setAttribute('aria-pressed', S.ui === 'en'); $('lang-es').setAttribute('aria-pressed', S.ui === 'es');
@@ -265,6 +289,10 @@
   $('tpl').addEventListener('change', function (e) { S.tpl = e.target.value; update(); });
   $('rlang').addEventListener('change', function (e) { S.rlang = e.target.value; S.rlangTouched = true; update(); });
   ['en', 'es'].forEach(function (l) { $('lang-' + l).addEventListener('click', function () { S.ui = l; applyUI(); }); });
+
+  window.addEventListener('beforeunload', function (e) { if (hasData()) { e.preventDefault(); e.returnValue = ''; } });
+  window.addEventListener('beforeprint', function () { document.title = S.name ? S.name + ' - ' + T[S.rlang].docName : t().title; });
+  window.addEventListener('afterprint', function () { document.title = t().title; });
 
   applyUI();
 })();

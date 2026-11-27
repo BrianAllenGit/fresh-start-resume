@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fresh Start Resume</title>
 <meta name="description" content="A free, private resume builder. Nothing is saved or sent anywhere.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +14,8 @@
 <header class="top no-print">
   <h1 data-i18n="title">Fresh Start Resume</h1>
   <div class="langs" role="group" aria-label="Language / Idioma">
-    <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
-    <button type="button" id="lang-es" data-lang="es" aria-pressed="false">ES</button>
+    <button type="button" id="lang-en" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+    <button type="button" id="lang-es" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
   </div>
 </header>
 
@@ -33,6 +35,7 @@
       <button type="button" id="btn-back" class="btn secondary"></button>
       <button type="button" id="btn-next" class="btn primary"></button>
     </div>
+    <a class="previewlink" href="#prev-h" data-i18n="previewLink">See my resume</a>
   </section>
 
   <section class="panel preview-panel" aria-labelledby="prev-h">
@@ -55,6 +58,7 @@
   <p data-i18n="foot">This site has no analytics and saves nothing. The website host may keep standard server logs of visits that we cannot see or control.</p>
   <p>Fresh Start Resume · MIT</p>
 </footer>
+<noscript><p>This resume builder needs JavaScript. / Este constructor de currículum necesita JavaScript.</p></noscript>
 <script src="app.js"></script>
 </body>
 </html>

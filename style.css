@@ -23,7 +23,11 @@ label{display:block;font-weight:600;margin:12px 0 4px}
 input,textarea,select{width:100%;font:inherit;padding:10px;min-height:48px;border:2px solid var(--line);border-radius:8px;background:#fff;color:var(--ink)}
 .opts select{width:auto;min-width:140px}
 textarea{min-height:90px}
-:focus-visible{outline:3px solid #ff9800;outline-offset:2px}
+:focus-visible{outline:3px solid #0b4f8a;outline-offset:2px;box-shadow:0 0 0 5px #fff,0 0 0 8px #ff9800}
+.top :focus-visible{outline-color:#fff;box-shadow:0 0 0 5px var(--accent),0 0 0 8px #ff9800}
+.previewlink{display:inline-block;margin:12px 0 0;font-weight:600;color:var(--accent)}
+@media(min-width:1000px){.previewlink{display:none}}
+@media(max-width:480px){.resume .jobhead span:last-child{white-space:normal}}
 .btn{font:inherit;font-weight:700;min-height:48px;padding:10px 18px;border-radius:8px;border:2px solid var(--accent);cursor:pointer}
 .btn.primary{background:var(--accent);color:#fff}.btn.secondary{background:#fff;color:var(--accent)}
 .btn.big{width:100%;margin-top:10px;font-size:1.2rem}
