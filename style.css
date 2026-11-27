@@ -61,4 +61,6 @@ footer a{color:var(--accent)}
   .panel{border:0;padding:0;background:none}
   .resume{border:0;padding:0;margin:0}
   .resume .empty{display:none}
+  .resume h1,.resume .contact,.resume h2{break-after:avoid}
+  .resume .job,.resume li{break-inside:avoid}
 }
