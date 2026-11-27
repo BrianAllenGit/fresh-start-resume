@@ -2,6 +2,8 @@
 
 Live: https://brianallengit.github.io/fresh-start-resume/
 
+Files for search and sharing: `robots.txt`, `sitemap.xml`, `llms.txt`, `manifest.webmanifest`, icons. `hreflang` es, en and x-default all point to the one URL because the language switch happens on the same page.
+
 A free, private, bilingual (English / Spanish) resume builder for people leaving homelessness. Answer a few short steps, see your resume live, then print it or save it as a PDF. It works on a phone or a library computer, and offline once the page has loaded.
 
 ## Privacy promise

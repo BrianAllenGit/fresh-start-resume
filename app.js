@@ -5,6 +5,11 @@
     en: {
       skip: 'Skip to the form', title: 'Fresh Start Resume', privH: 'Your privacy',
       privP: "Your information never leaves this device. We don't track you, store anything, or use cookies. When you close this page, everything you typed is gone, so print or save your resume as a PDF before you leave. On a shared computer, delete the PDF from Downloads after you send it.",
+      seoTitle: 'Fresh Start Resume: free and private resume builder', seoDesc: 'Build a one-page resume in English or Spanish. Free and private, no sign-up: nothing is saved or tracked. Made for people leaving homelessness. Save as PDF.',
+      aboutH: 'About this tool', whatT: 'What this is',
+      whatD: 'A free tool that helps you write a one-page resume. You answer a few short questions and watch your resume fill in.',
+      whoT: 'Who it is for', whoD: 'Anyone who needs a resume and has no easy way to make one, including people leaving homelessness or going back to work after a break.',
+      howT: 'How it works', howD: 'Go through 7 short steps, pick a style, then print the page or choose "Save as PDF". Nothing is saved, so finish in one visit.',
       previewH: 'Your resume', tplLabel: 'Style', rlangLabel: 'Resume language', simple: 'Simple', modern: 'Modern',
       print: 'Print / Save as PDF', printHint: 'In the print window, choose "Save as PDF" as the printer to keep a copy.',
       foot: 'This site has no analytics and saves nothing. It is hosted on GitHub Pages, which may keep standard visit logs that we cannot see or control. We add nothing.',
@@ -42,6 +47,11 @@
     es: {
       skip: 'Ir al formulario', title: 'Fresh Start Resume', privH: 'Tu privacidad',
       privP: 'Tu información nunca sale de este dispositivo. No te rastreamos, no guardamos nada y no usamos cookies. Cuando cierres esta página, todo lo que escribiste desaparece, así que imprime tu currículum o guárdalo como PDF antes de irte. En una computadora compartida, borra el PDF de Descargas después de enviarlo.',
+      seoTitle: 'Fresh Start Resume: currículum gratis y privado en línea', seoDesc: 'Crea un currículum de una página en español o inglés. Gratis y privado, sin registro: no se guarda ni se rastrea nada. Para quienes salen de vivir en la calle.',
+      aboutH: 'Acerca de esta herramienta', whatT: 'Qué es',
+      whatD: 'Una herramienta gratuita para escribir un currículum de una página. Respondes unas preguntas cortas y ves cómo se arma tu currículum.',
+      whoT: 'Para quién es', whoD: 'Para cualquier persona que necesite un currículum y no tenga una forma fácil de hacerlo, incluidas las personas que salen de vivir en la calle o que vuelven a trabajar después de una pausa.',
+      howT: 'Cómo funciona', howD: 'Sigue 7 pasos cortos, elige un estilo y luego imprime la página o elige "Guardar como PDF". No se guarda nada, así que termina en una sola visita.',
       previewH: 'Tu currículum', tplLabel: 'Estilo', rlangLabel: 'Idioma del currículum', simple: 'Simple', modern: 'Moderno',
       print: 'Imprimir / Guardar como PDF', printHint: 'En la ventana de impresión, elige "Guardar como PDF" como impresora para conservar una copia.',
       foot: 'Este sitio no tiene analíticas y no guarda nada. Está alojado en GitHub Pages, que puede guardar registros estándar de visitas que nosotros no podemos ver ni controlar. Nosotros no agregamos nada.',
@@ -124,7 +134,7 @@
     clearTimeout(statusTimer);
     statusTimer = setTimeout(function () { s.textContent = msg; }, 60);
   }
-  function pageTitle() { var L = t(); return L.title + ': ' + L.stepOf.replace('{n}', S.step + 1).replace('{t}', STEPS) + ', ' + L.steps[S.step]; }
+  function pageTitle() { var L = t(); if (S.step === 0) return L.seoTitle; return L.title + ': ' + L.stepOf.replace('{n}', S.step + 1).replace('{t}', STEPS) + ', ' + L.steps[S.step]; }
   function fieldset(legend, inner) { return '<fieldset class="entry"><legend>' + esc(legend) + '</legend>' + inner + '</fieldset>'; }
 
   function bind(id, fn) { var e = $(id); if (e) e.addEventListener('input', function () { fn(e.value); update(); }); }
@@ -286,10 +296,15 @@
     r.innerHTML = h; r.lang = S.rlang; r.className = 'resume ' + S.tpl;
   }
 
+  function setMeta(sel, v) { var m = document.querySelector(sel); if (m) m.setAttribute('content', v); }
+
   function applyUI(say) {
     var L = t();
     document.documentElement.lang = S.ui;
     document.title = pageTitle();
+    setMeta('meta[name="description"]', L.seoDesc); setMeta('meta[property="og:title"]', L.seoTitle); setMeta('meta[property="og:description"]', L.seoDesc);
+    setMeta('meta[name="twitter:title"]', L.seoTitle); setMeta('meta[name="twitter:description"]', L.seoDesc);
+    setMeta('meta[property="og:locale"]', S.ui === 'es' ? 'es_US' : 'en_US'); setMeta('meta[property="og:locale:alternate"]', S.ui === 'es' ? 'en_US' : 'es_US');
     $('resume').setAttribute('aria-label', L.resumeAria);
     Array.prototype.forEach.call(document.querySelectorAll('[data-i18n]'), function (el) { if (L[el.getAttribute('data-i18n')] != null) el.textContent = L[el.getAttribute('data-i18n')]; });
     var o = $('tpl').options; o[0].textContent = L.simple; o[1].textContent = L.modern;
